@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Navigation from "../components/Navigation.astro";
 
 const pageTitle = "About Me";
 const identity = {
@@ -34,8 +35,7 @@ const skillColor = "navy";
     </style>
 </head>
 <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
+    <Navigation/>
     <h1>{pageTitle}</h1>
     {identity.hobbies.length >= 2 &&
             <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>

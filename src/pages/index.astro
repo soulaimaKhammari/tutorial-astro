@@ -1,4 +1,7 @@
 ---
+import '../styles/global.css';
+
+import Navigation from '../components/Navigation.astro';
 const homePage = "Home";
 ---
 
@@ -11,8 +14,7 @@ const homePage = "Home";
 		<title> {homePage} </title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
+		<Navigation/>
 		<h1> {homePage} </h1>
 	</body>
 </html>
